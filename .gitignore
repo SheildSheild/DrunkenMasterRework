@@ -1,0 +1,29 @@
+# Game files and unnecessary folders
+*.pak
+*.gts
+*.log
+*.bak
+*.tmp
+
+# Editor-only folders
+Editor/Help/
+Editor/Hints/
+Editor/MEIEditor/
+Editor/Gizmos/
+Editor/Textures/
+Editor/Triggers/
+Editor/Preview/
+
+# Other mods and shared folders
+Editor/Mods/Shared*
+Editor/Mods/Gustav*
+Mods/Shared*
+Mods/Gustav*
+Mods/Shadow_Ninja/
+Public/Shared/
+Public/Gustav*
+Public/Shadow_Ninja/
+
+# Export artifacts
+Exported/
+Generated/
