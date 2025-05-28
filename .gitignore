@@ -28,9 +28,11 @@ Public/Shared/
 Public/Gustav*
 Public/Shadow_Ninja
 Public/Engine
+Public/Game
 Projects/Gustav*
 Projects/Shadow*
 
 # Export artifacts
 Exported/
 Generated/
+Localization/
