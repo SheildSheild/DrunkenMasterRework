@@ -9,8 +9,8 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SG_Poisoned);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_WholenessOfBody" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h129ea319g554fgfe92gbb9ag6b2f2ec66396" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h289a7183g8b6ag8987g5231g7f7c5c51d062" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h129ea319g554fgfe92gbb9ag6b2f2ec66396" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h289a7183g8b6ag8987g5231g7f7c5c51d062" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Requirements" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />

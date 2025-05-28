@@ -7,8 +7,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="IntoxicatingStrike" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbafc39f1g1db2gcb03g0f92g1f387b322e65" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f8e3a7dg4c84g7037g2fd5gc45b0f49e41c" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbafc39f1g1db2gcb03g0f92g1f387b322e65" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f8e3a7dg4c84g7037g2fd5gc45b0f49e41c" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning); DealDamage(1d4, Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUNK,100,5)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
@@ -46,7 +46,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had284e6ag1317g84eagbb12g1519b5fdc766" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had284e6ag1317g84eagbb12g1519b5fdc766" version="2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -55,8 +55,8 @@
         <field name="Name" type="NameTableFieldDefinition" value="FreeIntoxicatingStrike" />
         <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbf11198egd72bgea32geb71g8e390fd886ac" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19dd4a97g7ba5gc47fg2a34gbd06f9712e53" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbf11198egd72bgea32geb71g8e390fd886ac" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19dd4a97g7ba5gc47fg2a34gbd06f9712e53" version="3" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning); DealDamage(1d4, Slashing)" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUNK,100,5)" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:1" />
@@ -96,8 +96,8 @@
         <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1204f591gfc23g16e4g311dg5db4d3f710d4" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h521913d9g1a2bg0b99gebe8g9f6d73b52ec1" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1204f591gfc23g16e4g311dg5db4d3f710d4" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h521913d9g1a2bg0b99gebe8g9f6d73b52ec1" version="2" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />

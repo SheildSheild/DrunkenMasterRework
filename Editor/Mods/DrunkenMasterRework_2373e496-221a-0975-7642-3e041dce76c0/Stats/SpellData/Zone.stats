@@ -8,7 +8,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="1a0c453c-c96d-4d36-880d-4775cd7cf93b" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ca2f306g046eg8079ga1adgc1321aed2ed0" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ca2f306g046eg8079ga1adgc1321aed2ed0" version="2" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
         <field name="Base" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -21,7 +21,7 @@
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Control" />
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Cold" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfccdadccg54bdgef94g238fg0779d4940802" version="5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfccdadccg54bdgef94g238fg0779d4940802" version="6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DOUSED);" />
         <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
@@ -43,7 +43,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="01795a2f-ecbd-4492-8075-948ea071206c" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(UnarmedDamage , Bludgeoning);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4882078g9443g2873ge3dcgbcc1062cfe95" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4882078g9443g2873ge3dcgbcc1062cfe95" version="2" />
         <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RechargeValues" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -51,7 +51,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="85386181-e9ec-4996-a1dd-7f09f3013189" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="208b02ef-5847-493d-94b8-a901691979ef" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7751fa1gba04gcae9g69e2g719ec441fd02" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7751fa1gba04gcae9g69e2g719ec441fd02" version="2" />
         <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
         <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
         <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="d9cea656-28ad-4e1b-baa2-3ae471f17065,,;8d084ad6-45f1-4b9a-9d56-59b68203641b,,;4595e579-0b44-498f-8eb4-26375b9fe9fb,,;4fe5d677-2411-4e63-bfa1-bb449f7c6942,,;cf5a233b-7d24-4314-a964-19cfc5ba9a85,,;b00647fc-33a0-4324-bad0-8d762bd3c57b,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
