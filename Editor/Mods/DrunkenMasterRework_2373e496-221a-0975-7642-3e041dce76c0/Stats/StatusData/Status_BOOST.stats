@@ -149,5 +149,11 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8d8e7359-1951-4380-803b-512761757322" />
+        <field name="Name" type="NameTableFieldDefinition" value="GOD_I_HOPE_THIS_WORKS" />
+      </fields>
+    </stat_object>
   </stat_objects>
 </stats>
