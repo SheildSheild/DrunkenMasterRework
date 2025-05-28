@@ -13,16 +13,23 @@ Editor/Gizmos/
 Editor/Textures/
 Editor/Triggers/
 Editor/Preview/
-
-# Other mods and shared folders
+Editor/Config/
 Editor/Mods/Shared*
 Editor/Mods/Gustav*
+Editor/Mods/Engine
+Editor/Mods/PhotoMode
+Editor/Mods/Shadow*
+
+# Other mods and shared folders
 Mods/Shared*
 Mods/Gustav*
-Mods/Shadow_Ninja/
+Mods/Shadow_Ninja
 Public/Shared/
 Public/Gustav*
-Public/Shadow_Ninja/
+Public/Shadow_Ninja
+Public/Engine
+Projects/Gustav*
+Projects/Shadow*
 
 # Export artifacts
 Exported/
