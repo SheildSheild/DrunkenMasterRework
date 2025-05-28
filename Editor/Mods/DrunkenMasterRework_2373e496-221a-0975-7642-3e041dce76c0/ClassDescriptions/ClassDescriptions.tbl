@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a86b6e82-0a7f-47cb-bff1-a0a6d161fa30">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_33" />
+        <field name="UUID" type="IdTableFieldDefinition" value="d2f9ad6d-caab-40fd-b57b-f5caed2ec3d7" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="Monk" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf1158c75g6b07gf73fg39ffg2962ed3e7dc0" version="1" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="e1e460bb-d0ae-4452-8529-c9e176558731" />
+        <field name="ClassEquipment" type="FixedStringTableFieldDefinition" value="EQP_CC_Monk" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+        <field name="BaseHp" type="IntegerTableFieldDefinition" value="8" />
+        <field name="HpPerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h30d8018cgb6b6gc6c0g8e77ge8f29e0c8eb3" version="1" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Monk" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_4" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5514fd5a-f3e4-4576-a1df-4dc84f828d5a" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="c4598bdb-fc07-40dd-a62c-90cc138bd76f" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e8e8142gb06bg664ag2ab0g3562ca4635fe" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h07f9cb81gc3f1gf7e1g0f58gc94d2ac4dc7c" version="3" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Monk" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Dexterity" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Wisdom" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

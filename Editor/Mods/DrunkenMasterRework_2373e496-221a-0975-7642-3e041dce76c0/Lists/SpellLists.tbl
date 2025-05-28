@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3f5063e7-e02b-4849-a503-9ba01dc6e2e6">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc1f6620-f7d1-4161-a313-87b8406336c6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Modded Drunken Master Level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_DrunkenTechnique" />
+        <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="966a3d57-dcdc-4aa4-a682-812c0e3ec857" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7e888f69-c387-417a-8a5d-010a4c1559ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Modded Drunken Master Level 4" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Zone_DrunkenMist;Zone_SweepingKick;Shout_DrunkenRestoredBalance" />
+        <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="a16af3be-de15-49c5-b9c8-99719b1fce2f" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

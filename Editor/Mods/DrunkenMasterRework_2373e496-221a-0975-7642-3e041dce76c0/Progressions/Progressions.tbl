@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="53912403-fe14-4ce0-89aa-96acb1dee21a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_37" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f4b1887b-ebc5-4a00-80c2-d2671ac2e7ba" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="fe1319a2-86be-469c-aab5-e3b0bd714e0e" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Monk" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="22894c32-54cf-49ea-b366-44bfcf01bb2a;2a5e3097-384c-4d29-8d6e-054fdfd26b80;bf46d73f-d406-4cb8-9a1d-e6e758ca02c7;d8d9e1e3-cbd6-4240-ab1e-bd3626cb5532" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(KiPoint,1,0);ActionResource(DeflectMissiles_Charge,1,0)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DeflectMissiles" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_29" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c8d1498e-ce09-4933-8307-d25b70aa79cc" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Performance)" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="FlurryOfBlowsUnlock" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_41" />
+        <field name="UUID" type="IdTableFieldDefinition" value="98d8e522-827b-41f4-ac05-76fea6e9607c" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="Level" type="ByteTableFieldDefinition" value="4" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a16af3be-de15-49c5-b9c8-99719b1fce2f)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LifeOfTheParty;Alcoholic_Opening_Strike;Flaming_Fists;Hangover_1;Hangover_2;Hangover_3;Hangover_3_Removal;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_30" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3c9ab40c-7344-482d-94a3-19e1a9412139" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LeapToYourFeet;RedirectAttack_Unlock;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_40" />
+        <field name="UUID" type="IdTableFieldDefinition" value="26ba9656-8e03-492c-b4e9-5f544761bbf7" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="Level" type="ByteTableFieldDefinition" value="9" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(46fd6e90-d0bd-4825-896e-b266beaec95d)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_31" />
+        <field name="UUID" type="IdTableFieldDefinition" value="5ad58b86-2d34-4dc6-ac97-d50b8696bf06" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21" />
+        <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DrunkardsLuck" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

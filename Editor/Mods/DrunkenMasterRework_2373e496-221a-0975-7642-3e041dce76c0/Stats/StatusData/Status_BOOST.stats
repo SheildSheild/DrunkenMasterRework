@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c46d0e28-2b64-4a14-b6ae-b1b7c0d7085b" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK_DRUNKEN_MASTER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3288a264-6a48-49c8-8308-5909f03ebfe1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd6c07fc0g3ccbge20bg303eg6fb463bfb247" version="3" />
+        <field name="StillAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusAnimationType" version="1" />
+        <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_DRUNKEN_MASTER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Passives" type="StringTableFieldDefinition" value="DrunkenFlow;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bec5ebc4-6922-4747-b6bd-38ac1d1f321e" />
+        <field name="Name" type="NameTableFieldDefinition" value="DOUSED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf621d1ebg67fbgf638gd2d0g573d42959870" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h265110e3gc497g2ef2g834dg17dae57b2ee0" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Wet" />
+        <field name="FormatColor" type="EnumerationTableFieldDefinition" value="Brown" enumeration_type_name="FormatStringColor" version="1" />
+        <field name="MaterialType" type="EnumerationTableFieldDefinition" value="FadingOverlay" enumeration_type_name="MaterialType" version="1" />
+        <field name="MaterialApplyBody" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyArmor" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyWeapon" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialApplyNormalMap" type="EnumerationTableFieldDefinition" value="Yes" enumeration_type_name="YesNo" version="1" />
+        <field name="MaterialFadeAmount" type="IntegerTableFieldDefinition" value="3000" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DOUSED" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Resistance(Fire, Vulnerable);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Surface" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="ApplyEquipmentStatus(MainHand,DIPPED_WATER,100,0);ApplyEquipmentStatus(OffHand,DIPPED_WATER,100,0);RemoveStatus(SLEEPING);RemoveStatus(SLEEP);RemoveStatus(SG_Invisible);RemoveStatus(SG_Sleeping);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="33b6ed26-a3d2-46ac-a5ba-932637344771" />
+        <field name="SplatterDirtAmount" type="FloatTableFieldDefinition" value="-2" />
+        <field name="SplatterBloodAmount" type="FloatTableFieldDefinition" value="-2" />
+        <field name="SplatterSweatAmount" type="FloatTableFieldDefinition" value="-2" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="10" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0c859dc8-10bc-4274-b5ff-b0ea52d7ce5c" />
+        <field name="Name" type="NameTableFieldDefinition" value="MARTIAL_ARTS_BONUS_INTOXICATING_STRIKE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb8b46652gbcddgcdedgd6c6g9f08a2e3836c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd9c340a0gcf1fg2d41g9891gb35c27bf0f44" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="MARTIAL_ARTS_BONUS_UNARMED_STRIKE" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="StartTurn" enumeration_type_name="TickType" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_FreeIntoxicatingStrike);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_IntoxicatingStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="aa3e99ec-39aa-468a-b676-4a67061f7c7d" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK_DRUNKEN_MASTER_PENDING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h96f53f84g0090gb619g241bge17c3b4c1dd7" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Wet" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_PENDING" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="84f95d2d-ba84-4ca8-b3c9-05e6f791143e" />
+        <field name="Name" type="NameTableFieldDefinition" value="FF_BURNING_LIMIT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2b1b08ebg72ddg7cfeg7f94g5a31c6f2de9b" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="FF_BURN_LIMIT" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndRound" enumeration_type_name="TickType" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisablePortraitIndicator;DisableCombatlog;DisableOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6a68d2e-95bb-4d5a-87f4-19c72030ac6c" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_DRUNKEN_MASTER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hed8272c8gb2dbg7519g6c5fge198096db530" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5e2ad05eg602bg89ffgf79dgc3c6cc7fb4c9" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Astarion_Weak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNKEN_MASTER_HUNGOVER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,0-1);RollBonus(Attack,0-1);RollBonus(SkillCheck,0-1)" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d55c4f76-b884-4353-9f5d-03f34a00fe53" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_DRUNKEN_MASTER_SEVERE" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he3ed99bagb045g5ef9g77fag782ecf4e72f5" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd35a4401g0b5fg77bcg3184g4218e7facc89" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Astarion_Weak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNKEN_MASTER_HUNGOVER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,0-2);RollBonus(Attack,0-2);RollBonus(SkillCheck,0-2);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6a68d2e-95bb-4d5a-87f4-19c72030ac6c" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9da0a857-0e66-46c8-a472-09007b260c88" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_DRUNKEN_MASTER_POISONED" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7bec0079g255dge20egefafg55a67b009b6d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h87986af7g3926g2c8agb626g1dcec0135c67" version="5" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Status_Astarion_Weak" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNKEN_MASTER_HUNGOVER" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow);RollBonus(Attack,0-3);RollBonus(SkillCheck,0-3);ActionResourceBlock(ReactionActionPoint);" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e6a68d2e-95bb-4d5a-87f4-19c72030ac6c" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="32b4cf24-0eb9-4e43-9a3f-a3bd9e1499ae" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_DESCRIPTION" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf2f317b4g6af7g09dagc0e9g9988e4239849" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c212b98g9a09g5cd2g3461g0518e8de5db1" version="2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="96ed7a56-358a-45ab-ad0b-67821ee9485f" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_PENDING" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h19cfc4dbg92a3gb747gbbcdg54d8e913791c" version="2" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HUNGOVER_PENDING" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c2d32e51-0cf8-44a9-bf74-14c375b2fac8" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_PENDING_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5affb7b6g931ag8df7g0798gae9364af4d9e" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HUNGOVER_PENDING" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e583acda-047c-4d5e-8b30-ba479672a653" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNGOVER_PENDING_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6e76f14bg9645g31cfge099g843c92c8d8c4" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HUNGOVER_PENDING" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

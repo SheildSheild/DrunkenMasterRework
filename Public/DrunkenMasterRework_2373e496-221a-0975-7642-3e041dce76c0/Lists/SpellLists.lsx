@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="200"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="MergedInto" type="guid" value="966a3d57-dcdc-4aa4-a682-812c0e3ec857"/>
+                    <attribute id="Name" type="FixedString" value="Modded Drunken Master Level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_DrunkenTechnique"/>
+                    <attribute id="UUID" type="guid" value="dc1f6620-f7d1-4161-a313-87b8406336c6"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="MergedInto" type="guid" value="a16af3be-de15-49c5-b9c8-99719b1fce2f"/>
+                    <attribute id="Name" type="FixedString" value="Modded Drunken Master Level 4"/>
+                    <attribute id="Spells" type="LSString" value="Zone_DrunkenMist;Zone_SweepingKick;Shout_DrunkenRestoredBalance"/>
+                    <attribute id="UUID" type="guid" value="7e888f69-c387-417a-8a5d-010a4c1559ec"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="4fcdf163-88be-40b5-bf02-680ac5d776d9">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c41ca825-0a74-4179-98de-75d8233210e8" />
+        <field name="Name" type="NameTableFieldDefinition" value="DrunkenMist" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="1a0c453c-c96d-4d36-880d-4775cd7cf93b" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFail" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6ca2f306g046eg8079ga1adgc1321aed2ed0" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Shape" type="StringTableFieldDefinition" value="Cone" />
+        <field name="Base" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="60" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="076e3154-3fec-439a-ba04-e784aad9ad93" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c4e3852a-1f59-472e-9bd3-d1ce8f65b891" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="Damage Type" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Utility_CreateWater_L1to3" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Control" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Cold" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfccdadccg54bdgef94g238fg0779d4940802" version="5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DOUSED);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Range" type="IntegerTableFieldDefinition" value="4" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Utility_CreateWater_L1to3" />
+        <field name="VocalComponentSound" type="StringTableFieldDefinition" value="Vocal_Component_CreateWater" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK_DRUNKEN_MASTER_PENDING', context.Source);" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="50b6ea71-1bed-47bd-b4e7-193e16784e82" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e18409eb-edb7-4ba0-884a-e776e0b19acf" />
+        <field name="Name" type="NameTableFieldDefinition" value="SweepingKick" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="01795a2f-ecbd-4492-8075-948ea071206c" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(UnarmedDamage , Bludgeoning);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4882078g9443g2873ge3dcgbcc1062cfe95" version="1" />
+        <field name="HitCosts" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RechargeValues" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="MaximumTargets" type="IntegerTableFieldDefinition" value="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="2" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="85386181-e9ec-4996-a1dd-7f09f3013189" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="208b02ef-5847-493d-94b8-a901691979ef" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd7751fa1gba04gcae9g69e2g719ec441fd02" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning);DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="d9cea656-28ad-4e1b-baa2-3ae471f17065,,;8d084ad6-45f1-4b9a-9d56-59b68203641b,,;4595e579-0b44-498f-8eb4-26375b9fe9fb,,;4fe5d677-2411-4e63-bfa1-bb449f7c6942,,;cf5a233b-7d24-4314-a964-19cfc5ba9a85,,;b00647fc-33a0-4324-bad0-8d762bd3c57b,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_IntoxicatingStrike" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Monk_DrunkenMaster_General" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_SlashingFlourish_Melee" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Self() and not Dead() and not Ally();" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_OpenHandTech_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CursorMode" version="1" />
+        <field name="Angle" type="IntegerTableFieldDefinition" value="90" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1;" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="82b8aad9-5031-41f8-a871-dc55eb52af88" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

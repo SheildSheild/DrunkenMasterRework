@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="8" revision="0" build="100"/>
+    <region id="MetaData">
+        <node id="root">
+            <attribute id="GameProject" type="LSString" value=""/>
+            <attribute id="Module" type="LSString" value="2373e496-221a-0975-7642-3e041dce76c0"/>
+            <attribute id="Name" type="LSString" value="DrunkenMasterRework"/>
+            <attribute id="UUID" type="LSString" value="0312ab81-16bd-a00c-0abe-3cd573a4ddd6"/>
+            <attribute id="UpdatedDependencies" type="bool" value="true"/>
+            <children>
+                <node id="Categories"/>
+            </children>
+        </node>
+    </region>
+</save>

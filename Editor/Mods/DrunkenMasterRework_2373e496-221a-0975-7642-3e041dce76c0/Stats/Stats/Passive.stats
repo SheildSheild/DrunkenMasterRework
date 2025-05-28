@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="20ddc1fe-afe4-4367-b26a-53f57b15854a" />
+        <field name="Name" type="NameTableFieldDefinition" value="DrunkenFlow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h78c0882bgae4fgc8aeg5ec4g97525f70e895" version="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatusGroup('SG_Drunk');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(SELF, DRUNKEN_FLOW_STATUS, -1);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h361e2949g61ccgb94cgcb0bg00a9774d7e67" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3776c7ae-0baf-4e9a-9d87-cd5b21d13bd2" />
+        <field name="Name" type="NameTableFieldDefinition" value="CheekyTipple" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h30e3eacagc881ge744g2a1ag2821ce22e2d4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h643442f6gf489ge140gf943gf9616fc6d36c" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsToggled;ToggledDefaultAddToHotbar;OncePerLongRest" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RestoreResource(SELF,KiPoint,(ClassLevel(Monk)+1)/2,0)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8ea169f2-facc-44a0-8691-af382dab158c" />
+        <field name="Name" type="NameTableFieldDefinition" value="CheekyTipple_Drunk" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he0baf1f1g2d0fgfec5g70dcg724bc8104b53" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('SG_Drunk');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DRUNK_DRUNKEN_MASTER,100,3);RemoveStatus(SG_Drunk);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2f8fb6b3-1927-4cbb-bb93-02d13d233b77" />
+        <field name="Name" type="NameTableFieldDefinition" value="Alcoholic_Opening_Strike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf8e09841g7177ga448g45a0gec674d7d0b25" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9a97a9fdgdec6g0d05g01d5g875ec115a04a" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK_DRUNKEN_MASTER_PENDING', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED', context.Source)):ApplyStatus(SELF, MARTIAL_ARTS_BONUS_INTOXICATING_STRIKE, 100, 1);ApplyStatus(SELF, DRUNK_DRUNKEN_MASTER_PENDING, 100, 3);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2d22823c-2384-4b4d-85a6-3393e02c60e2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Flaming_Fists" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2d19536dgd94cgb6a0g011eg32a9b08554ca" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hb5c141c4g9b3egb4degaa29g90d3ef49550e" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d4+WisdomModifier, Fire)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsMeleeUnarmedAttack()):CharacterUnarmedDamage(1d4+WisdomModifier, Fire);UnlockSpellVariant(MeleeUnarmedAttackCheck(),ModifyTargetRadius(Multiplicative,1));" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsToggled;Highlighted;ToggledDefaultAddToHotbar" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GenericIcon_DamageType_Fire" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="(HasDamageEffectFlag(DamageFlags.Hit) or HasDamageEffectFlag(DamageFlags.Critical)) and IsMeleeUnarmedAttack() and not (IsCriticalMiss() or IsMiss());" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('FF_BURNING_LIMIT', context.Source)):ApplyStatus(SELF, BURNING, 100, 2); IF(not HasStatus('FF_BURNING_LIMIT', context.Source)): ApplyStatus(SELF, FF_BURNING_LIMIT, 100, 1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="7c788dc2-b59a-426e-94f7-93236cf81366" />
+        <field name="Name" type="NameTableFieldDefinition" value="DrunkenMist_ReduceDurationPerDamage_Passive" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Zone_DrunkenMist');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="SetStatusDuration(DRUNK_DRUNKEN_MASTER,-1,Add);SetStatusDuration(DRUNK_DRUNKEN_MASTER_PENDING,-1,Add);SetStatusDuration(HUNGOVER_PENDING,-1,Add);SetStatusDuration(HUNGOVER_PENDING_2,-1,Add);SetStatusDuration(HUNGOVER_PENDING_3,-1,Add);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c52e6d41-b16e-4aad-a325-2bbf3387a522" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hangover_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6acf8673g77dcg29e8g29ddgafe6c209e4ed" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hff2b9015g63d4g86b1g76c7gbc8f77c3abbf" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HUNGOVER_PENDING', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_SEVERE', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(not HasStatus('HUNGOVER_PENDING', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_SEVERE', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED', context.Source)):ApplyStatus(SELF, HUNGOVER_PENDING, 100, 3);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="23fd9b24-2b40-44d6-becb-224bc0762d59" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hangover_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6584acfdg73ceg6d72gd6e2g940c6729d724" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3ae593dcgfac5g4482g34bbg473f3f3e6907" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HUNGOVER_PENDING_2', context.Source) and HasStatus('HUNGOVER_DRUNKEN_MASTER', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_SEVERE', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);RemoveStatus(HUNGOVER_DRUNKEN_MASTER);IF(not HasStatus('HUNGOVER_PENDING_2', context.Source) and HasStatus('HUNGOVER_DRUNKEN_MASTER', context.Source)):ApplyStatus(SELF, HUNGOVER_PENDING_2, 100, 3);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="647ae61d-a7ef-43a9-8947-8f3fe0d875fc" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hangover_3" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HUNGOVER_PENDING_3', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER', context.Source) and HasStatus('HUNGOVER_DRUNKEN_MASTER_SEVERE', context.Source) and not HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);RemoveStatus(HUNGOVER_DRUNKEN_MASTER_SEVERE);IF(not HasStatus('HUNGOVER_PENDING_3', context.Source) and HasStatus('HUNGOVER_DRUNKEN_MASTER_SEVERE', context.Source)):ApplyStatus(SELF, HUNGOVER_PENDING_3, 100, 3);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h69484e91g6f01ge78ag196cg30e05ef93a63" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d1bb992a-dfef-4aec-b547-c0ee3105080a" />
+        <field name="Name" type="NameTableFieldDefinition" value="Hangover_3_Removal" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a75db03ge31ag4fe2g8a7bg23b1526dd2fa" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRUNK_DRUNKEN_MASTER);RemoveStatus(DRUNK_DRUNKEN_MASTER_PENDING);RemoveStatus(HUNGOVER_PENDING_3);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

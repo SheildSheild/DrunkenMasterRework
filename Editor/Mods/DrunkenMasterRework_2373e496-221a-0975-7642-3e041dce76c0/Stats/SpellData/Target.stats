@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e988a674-28fe-49d2-a6ce-c5c1e0141f4c">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b6bc4858-78e9-4e1f-8c56-5219f4017f37" />
+        <field name="Name" type="NameTableFieldDefinition" value="IntoxicatingStrike" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE,100,1)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbafc39f1g1db2gcb03g0f92g1f387b322e65" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f8e3a7dg4c84g7037g2fd5gc45b0f49e41c" version="2" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning); DealDamage(1d4, Slashing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUNK,100,5)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;KiPoint:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack )" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="d9cea656-28ad-4e1b-baa2-3ae471f17065,,;a863696b-ff93-4d91-90a5-950ea66266fc,,;5f4e411b-6e72-436e-a40f-05632eb86453,,;4a25676d-4e24-422f-8714-52e0fcf8d244,,;cf5a233b-7d24-4314-a964-19cfc5ba9a85,,;e5bf19eb-bc79-4055-8b8b-08c37c0090c2,,;e1b69db4-0a23-47d7-81b8-1a91695ce134,,;,,;,," />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_IntoxicatingStrike" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="25e3c39f-363e-46b4-bcf7-ff880b7b4874" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="84c45131-8a72-42d6-95e8-98f8bf722656" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="05c38966-855f-4a9a-af45-d34a63a8f703" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Monk_DrunkenMaster_General" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_IntoxicatingStrike" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_Drunken_Master_IntoxicatingStrike" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc7b54d2-7b4b-4757-8eff-89788be7a1a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="IntoxicatingStrike_BonusAction" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="11a84fc7-13b4-43ba-ae21-7d2d7826f6d3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;KiPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="had284e6ag1317g84eagbb12g1519b5fdc766" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b9f0487e-2ebd-4367-94d4-7f804beebad8" />
+        <field name="Name" type="NameTableFieldDefinition" value="FreeIntoxicatingStrike" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning);DealDamage(1d4 , Slashing);IF(not SavingThrow(Ability.Constitution, SourceSpellDC())):ApplyStatus(DRUNK, 100, 5);ApplyStatus(DOUSED);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hbf11198egd72bgea32geb71g8e390fd886ac" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h19dd4a97g7ba5gc47fg2a34gbd06f9712e53" version="2" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning); DealDamage(1d4, Slashing)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUNK,100,5)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="KiPoint:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Sheathed" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="TargetCeiling" type="StringTableFieldDefinition" value="0" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value=".25" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="1.5" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack )" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeUnarmedAttack" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Character() and Enemy() and not Dead()" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="HitAnimationType" type="EnumerationTableFieldDefinition" value="PhysicalDamage" enumeration_type_name="HitAnimationType" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="d9cea656-28ad-4e1b-baa2-3ae471f17065,,;a863696b-ff93-4d91-90a5-950ea66266fc,,;5f4e411b-6e72-436e-a40f-05632eb86453,,;4a25676d-4e24-422f-8714-52e0fcf8d244,,;cf5a233b-7d24-4314-a964-19cfc5ba9a85,,;e5bf19eb-bc79-4055-8b8b-08c37c0090c2,,;e1b69db4-0a23-47d7-81b8-1a91695ce134,,;,,;,," />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_IntoxicatingStrike" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="25e3c39f-363e-46b4-bcf7-ff880b7b4874" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="84c45131-8a72-42d6-95e8-98f8bf722656" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="05c38966-855f-4a9a-af45-d34a63a8f703" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Spell_Prepare_Monk_DrunkenMaster_General" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_IntoxicatingStrike" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_Drunken_Master_IntoxicatingStrike" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="b6bc4858-78e9-4e1f-8c56-5219f4017f37" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a00516f3-ea4d-4f76-88be-d50bd160a686" />
+        <field name="Name" type="NameTableFieldDefinition" value="UnarmedStrike_Monk" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="cb2e2d55-aef5-4d96-a881-7b5d5da09203" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeUnarmedAttack)" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(UnarmedDamage , Bludgeoning)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_FreeUnarmedStrike" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1204f591gfc23g16e4g311dg5db4d3f710d4" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h521913d9g1a2bg0b99gebe8g9f6d73b52ec1" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsMelee;IsHarmful;Temporary;DisableBlood" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MartialArtsUnarmedDamage, Bludgeoning)" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="DualWieldingSpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;0579f797-dd8e-408d-b18d-01650f6041e2,,;69345989-e868-432e-9d8c-84f4bcf77494,,;5925204d-590c-4d7c-ac62-a51ba44d4589,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="9d8f170e-35d7-4cdb-b1f9-5493cf771b19" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="IF(not Player(context.Source)):ApplyStatus(SELF,AI_HELPER_EXTRAATTACK,100,1);RemoveStatus(SELF,MARTIAL_ARTS_BONUS_UNARMED_STRIKE)" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Monk_UnarmedStrike_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Monk_UnarmedStrike_L1to3" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Vocal_Component_Monk_Damage" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="DontChange" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('SG_Polymorph_BeastShape')" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Bludgeoning" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
