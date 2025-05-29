@@ -25,7 +25,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Performance)" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="FlurryOfBlowsUnlock" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_0;Drunk_1;Drunk_2;Drunk_3;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_Counter_1;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -48,7 +48,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LeapToYourFeet;RedirectAttack_Unlock;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LeapToYourFeet;RedirectAttack_Unlock;Drunk_Counter_2;" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Drunk_Counter_1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -60,6 +61,8 @@
         <field name="Level" type="ByteTableFieldDefinition" value="9" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(46fd6e90-d0bd-4825-896e-b266beaec95d)" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="Drunk_Counter_3" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Drunk_Counter_2" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -70,7 +73,8 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
         <field name="Level" type="ByteTableFieldDefinition" value="11" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DrunkardsLuck" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DrunkardsLuck;Drunk_Counter_4;" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Drunk_Counter_3" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -10,8 +10,6 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h361e2949g61ccgb94cgcb0bg00a9774d7e67" version="4" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_CheekyTipple" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('DRUNK0', context.Source)):DamageReduction(All, Flat, 1);IF(HasStatus('DRUNK1', context.Source)):DamageReduction(All, Flat, 1);IF(HasStatus('DRUNK2', context.Source)):CharacterUnarmedDamage(1, Bludgeoning);" />
-        <field name="BoostConditions" type="StringTableFieldDefinition" value="IF(HasStatus('DRUNK0', context.Source) or HasStatus('DRUNK1', context.Source) or HasStatus('DRUNK2', context.Source) or HasStatus('DRUNK3', context.Source);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -127,48 +125,48 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="68e3fa07-2a14-48a3-9ea3-9d06d7c68b99" />
-        <field name="Name" type="NameTableFieldDefinition" value="Drunk_0" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a64db82g34c1g6bafgeb90gfc20305f169d" version="1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Drunk_Counter_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a64db82g34c1g6bafgeb90gfc20305f169d" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DrunkardsLuck" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK0, 100, 3);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK0, 100, 3);IF(HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK1, 100, 3);RemoveStatus(DRUNK0);IF(not HasStatus('DRUNK0', context.Source) and HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK2, 100, 3);RemoveStatus(DRUNK1);IF(not HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and (HasStatus('DRUNK2', context.Source) or HasStatus('DRUNK3', context.Source))):ApplyStatus(SELF, DRUNK3, 100, 3);RemoveStatus(DRUNK2);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="0acfa475-027b-4a29-a073-cb5975327d14" />
-        <field name="Name" type="NameTableFieldDefinition" value="Drunk_1" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9ad74d32gda20g9a62g7dcdga96d9ca89e6f" version="1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="c58a2494-fec1-40ff-bcf2-ce4f116dbc51" />
+        <field name="Name" type="NameTableFieldDefinition" value="Drunk_Counter_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he13c0f0dg434fga2cfga2eeg68977f16b5e1" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DrunkardsLuck" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK1, 100, 3);RemoveStatus(DRUNK0);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK10', context.Source) and not HasStatus('DRUNK11', context.Source) and not HasStatus('DRUNK12', context.Source) and not HasStatus('DRUNK13', context.Source)):ApplyStatus(SELF, DRUNK10, 100, 3);IF(HasStatus('DRUNK10', context.Source) and not HasStatus('DRUNK11', context.Source) and not HasStatus('DRUNK12', context.Source) and not HasStatus('DRUNK13', context.Source)):ApplyStatus(SELF, DRUNK11, 100, 3);RemoveStatus(DRUNK10);IF(not HasStatus('DRUNK10', context.Source) and HasStatus('DRUNK11', context.Source) and not HasStatus('DRUNK12', context.Source) and not HasStatus('DRUNK13', context.Source)):ApplyStatus(SELF, DRUNK12, 100, 3);RemoveStatus(DRUNK11);IF(not HasStatus('DRUNK10', context.Source) and not HasStatus('DRUNK11', context.Source) and (HasStatus('DRUNK12', context.Source) or HasStatus('DRUNK13', context.Source))):ApplyStatus(SELF, DRUNK13, 100, 3);RemoveStatus(DRUNK12);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="d979fe98-94e6-4896-a2eb-a58c062dee53" />
-        <field name="Name" type="NameTableFieldDefinition" value="Drunk_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="57234ae7-edf1-4149-a50e-00ca527474f6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Drunk_Counter_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6e9b9ad8g06e1ge4e6g4820g822972cb0398" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DrunkardsLuck" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK0', context.Source) and HasStatus('DRUNK1', context.Source) and not HasStatus('DRUNK2', context.Source) and not HasStatus('DRUNK3', context.Source)):ApplyStatus(SELF, DRUNK2, 100, 3);RemoveStatus(DRUNK1);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haf97b998gdf76g0c39g4260ged122e9b07c9" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK20', context.Source) and not HasStatus('DRUNK21', context.Source) and not HasStatus('DRUNK22', context.Source) and not HasStatus('DRUNK23', context.Source)):ApplyStatus(SELF, DRUNK20, 100, 3);IF(HasStatus('DRUNK20', context.Source) and not HasStatus('DRUNK21', context.Source) and not HasStatus('DRUNK22', context.Source) and not HasStatus('DRUNK23', context.Source)):ApplyStatus(SELF, DRUNK21, 100, 3);RemoveStatus(DRUNK20);IF(not HasStatus('DRUNK20', context.Source) and HasStatus('DRUNK21', context.Source) and not HasStatus('DRUNK22', context.Source) and not HasStatus('DRUNK23', context.Source)):ApplyStatus(SELF, DRUNK22, 100, 3);RemoveStatus(DRUNK21);IF(not HasStatus('DRUNK20', context.Source) and not HasStatus('DRUNK21', context.Source) and (HasStatus('DRUNK22', context.Source) or HasStatus('DRUNK23', context.Source))):ApplyStatus(SELF, DRUNK23, 100, 3);RemoveStatus(DRUNK22);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8ffcbd60-4722-4638-8596-906828357113" />
-        <field name="Name" type="NameTableFieldDefinition" value="Drunk_3" />
+        <field name="UUID" type="IdTableFieldDefinition" value="686d2f86-8d50-4e4f-a587-e7b593d75e01" />
+        <field name="Name" type="NameTableFieldDefinition" value="Drunk_Counter_4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hded43558g4598g4785gd9fbgdc212b950d7c" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="PassiveFeature_DrunkardsLuck" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnConsumed" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="Tagged('ALCOHOL');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK0', context.Source) and not HasStatus('DRUNK1', context.Source) and (HasStatus('DRUNK2', context.Source) or HasStatus('DRUNK3', context.Source))):ApplyStatus(SELF, DRUNK3, 100, 3);RemoveStatus(DRUNK2);" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h03233a03g44dcgf507gc5ebg62136c478714" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('DRUNK30', context.Source) and not HasStatus('DRUNK31', context.Source) and not HasStatus('DRUNK32', context.Source) and not HasStatus('DRUNK33', context.Source)):ApplyStatus(SELF, DRUNK30, 100, 3);IF(HasStatus('DRUNK30', context.Source) and not HasStatus('DRUNK31', context.Source) and not HasStatus('DRUNK32', context.Source) and not HasStatus('DRUNK33', context.Source)):ApplyStatus(SELF, DRUNK31, 100, 3);RemoveStatus(DRUNK30);IF(not HasStatus('DRUNK30', context.Source) and HasStatus('DRUNK31', context.Source) and not HasStatus('DRUNK32', context.Source) and not HasStatus('DRUNK33', context.Source)):ApplyStatus(SELF, DRUNK32, 100, 3);RemoveStatus(DRUNK31);IF(not HasStatus('DRUNK30', context.Source) and not HasStatus('DRUNK31', context.Source) and (HasStatus('DRUNK32', context.Source) or HasStatus('DRUNK33', context.Source))):ApplyStatus(SELF, DRUNK33, 100, 3);RemoveStatus(DRUNK32);" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
