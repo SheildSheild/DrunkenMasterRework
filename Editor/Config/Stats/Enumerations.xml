@@ -1700,6 +1700,11 @@
         <item id="a71830ec-c5c3-4f80-b5b1-132583e7e84b" value="SG_Ignore_AOO" index="46" />
         <item id="4ca734e3-4ec2-4706-a1ee-5f417de7c9cd" value="SG_Sleeping_Magical" index="47" />
         <item id="2b0a7b42-0453-432b-9b39-ec0b8ea6f94d" value="SG_DrunkStack" index="48" />
+        <item id="6c1ea4c0-f9cb-4d98-a515-f8de1635f37f" value="SG_DrunkenHungover" index="49" />
+        <item id="a39e640e-c4f4-4d9d-a85d-54745b4a5e2b" value="SG_DrunkLevel0" index="50" />
+        <item id="f2a75564-5a53-4208-83f9-91b202e79e7b" value="SG_DrunkLevel1" index="51" />
+        <item id="ec1e9a2e-8b1e-4d37-b153-28197a43cda1" value="SG_DrunkLevel2" index="52" />
+        <item id="b04c1a6c-4297-4b4a-9f55-f1b3e1185a3f" value="SG_DrunkLevel3" index="53" />
       </items>
     </enumeration>
     <enumeration id="c2635d51-1a40-4965-a6a7-555e58d031da" name="WeaponSet">
