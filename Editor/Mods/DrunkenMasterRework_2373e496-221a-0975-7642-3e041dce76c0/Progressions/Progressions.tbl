@@ -25,7 +25,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Performance)" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="FlurryOfBlowsUnlock" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_Counter_1;Hangover_Tracker_1;Hangover_Tracker_2;Hangover_Tracker_3;Hangover_Tracker_4;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_Counter_1;Hangover_Tracker_1;Hangover_Tracker_2;Hangover_Tracker_3;Hangover_Tracker_4;Drunk_Removal" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -37,7 +37,7 @@
         <field name="Level" type="ByteTableFieldDefinition" value="4" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(a16af3be-de15-49c5-b9c8-99719b1fce2f)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LifeOfTheParty;Alcoholic_Opening_Strike;Flaming_Fists;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LifeOfTheParty;Alcoholic_Opening_Strike;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -48,8 +48,9 @@
         <field name="FSName" type="StringTableFieldDefinition" value="DrunkenMaster" />
         <field name="Level" type="ByteTableFieldDefinition" value="6" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LeapToYourFeet;RedirectAttack_Unlock;Drunk_Counter_2;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="LeapToYourFeet;RedirectAttack_Unlock;Drunk_Counter_2;Flaming_Fists;" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="Drunk_Counter_1" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(987d663e-b72e-422c-a18b-9cfa3655405e)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

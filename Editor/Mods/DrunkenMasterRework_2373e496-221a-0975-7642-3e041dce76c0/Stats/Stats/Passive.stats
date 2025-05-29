@@ -71,7 +71,7 @@
         <field name="Description" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Zone_DrunkenMist');" />
-        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="SetStatusDuration(DRUNK_DRUNKEN_MASTER,-1,Add);SetStatusDuration(DRUNK_DRUNKEN_MASTER_PENDING,-1,Add);SetStatusDuration(HUNGOVER_PENDING,-1,Add);SetStatusDuration(HUNGOVER_PENDING_2,-1,Add);SetStatusDuration(HUNGOVER_PENDING_3,-1,Add);" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="SetStatusDuration(DRUNK0,-1,Add); SetStatusDuration(DRUNK1,-1,Add); SetStatusDuration(DRUNK2,-1,Add); SetStatusDuration(DRUNK3,-1,Add); SetStatusDuration(DRUNK10,-1,Add); SetStatusDuration(DRUNK11,-1,Add); SetStatusDuration(DRUNK12,-1,Add); SetStatusDuration(DRUNK13,-1,Add); SetStatusDuration(DRUNK20,-1,Add); SetStatusDuration(DRUNK21,-1,Add); SetStatusDuration(DRUNK22,-1,Add); SetStatusDuration(DRUNK23,-1,Add); SetStatusDuration(DRUNK30,-1,Add); SetStatusDuration(DRUNK31,-1,Add); SetStatusDuration(DRUNK32,-1,Add); SetStatusDuration(DRUNK33,-1,Add); SetStatusDuration(DRUNK_DRUNKEN_MASTER,-1,Add);SetStatusDuration(SG_Drunk,-1,Add);SetStatusDuration(DRUNK_DRUNKEN_MASTER_PENDING,-1,Add);SetStatusDuration(MARTIAL_ARTS_INTOXICATING_STRIKE,-1,Add);" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
       </fields>
     </stat_object>
@@ -125,7 +125,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hangover_Tracker_1" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK0');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK0') or HasStatus('DRUNK10') or HasStatus('DRUNK20') or HasStatus('DRUNK30');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('HANGOVER_TRACKER_0', context.Source) and not HasStatus('HANGOVER_TRACKER_1', context.Source) and not HasStatus('HANGOVER_TRACKER_2', context.Source) and not HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HANGOVER_TRACKER_0, 100, -1);" />
       </fields>
     </stat_object>
@@ -135,7 +135,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hangover_Tracker_2" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK1');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK1') or HasStatus('DRUNK11') or HasStatus('DRUNK21') or HasStatus('DRUNK31');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_0', context.Source) and not HasStatus('HANGOVER_TRACKER_1', context.Source) and not HasStatus('HANGOVER_TRACKER_2', context.Source) and not HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HANGOVER_TRACKER_1, 100, -1);" />
       </fields>
     </stat_object>
@@ -145,7 +145,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hangover_Tracker_3" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK2');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK2') or HasStatus('DRUNK12') or HasStatus('DRUNK22') or HasStatus('DRUNK32');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('HANGOVER_TRACKER_0', context.Source) and HasStatus('HANGOVER_TRACKER_1', context.Source) and not HasStatus('HANGOVER_TRACKER_2', context.Source) and not HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HANGOVER_TRACKER_2, 100, -1);" />
       </fields>
     </stat_object>
@@ -155,8 +155,19 @@
         <field name="Name" type="NameTableFieldDefinition" value="Hangover_Tracker_4" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
-        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK3');" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('DRUNK3') or HasStatus('DRUNK13') or HasStatus('DRUNK23') or HasStatus('DRUNK33');" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('HANGOVER_TRACKER_0', context.Source) and not HasStatus('HANGOVER_TRACKER_1', context.Source) and HasStatus('HANGOVER_TRACKER_2', context.Source) and not HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HANGOVER_TRACKER_3, 100, -1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="cabc195b-57d7-40d7-b36c-64e81500ae13" />
+        <field name="Name" type="NameTableFieldDefinition" value="Drunk_Removal" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hea654617g0b3dgd9ddgcb97g96b8351616cd" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('HUNGOVER_DRUNKEN_MASTER_POISONED');" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(DRUNK0); RemoveStatus(DRUNK1); RemoveStatus(DRUNK2); RemoveStatus(DRUNK3); RemoveStatus(DRUNK10); RemoveStatus(DRUNK11); RemoveStatus(DRUNK12); RemoveStatus(DRUNK13); RemoveStatus(DRUNK20); RemoveStatus(DRUNK21); RemoveStatus(DRUNK22); RemoveStatus(DRUNK23); RemoveStatus(DRUNK30); RemoveStatus(DRUNK31); RemoveStatus(DRUNK32); RemoveStatus(DRUNK33); RemoveStatus(DRUNK_DRUNKEN_MASTER);RemoveStatus(SG_Drunk);RemoveStatus(DRUNK_DRUNKEN_MASTER_PENDING);RemoveStatus(MARTIAL_ARTS_INTOXICATING_STRIKE);" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -7,7 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DrunkenRestoredBalance" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="b9c846c0-c6ab-4859-a500-454b25b75098" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerShortRest" enumeration_type_name="CooldownType" version="1" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SG_Poisoned);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover);RemoveStatus(SG_Poisoned);RemoveStatus(DRUNK0); RemoveStatus(DRUNK1); RemoveStatus(DRUNK2); RemoveStatus(DRUNK3); RemoveStatus(DRUNK10); RemoveStatus(DRUNK11); RemoveStatus(DRUNK12); RemoveStatus(DRUNK13); RemoveStatus(DRUNK20); RemoveStatus(DRUNK21); RemoveStatus(DRUNK22); RemoveStatus(DRUNK23); RemoveStatus(DRUNK30); RemoveStatus(DRUNK31); RemoveStatus(DRUNK32); RemoveStatus(DRUNK33); RemoveStatus(DRUNK_DRUNKEN_MASTER);RemoveStatus(SG_Drunk);RemoveStatus(DRUNK_DRUNKEN_MASTER_PENDING);RemoveStatus(MARTIAL_ARTS_INTOXICATING_STRIKE);RemoveStatus(HANGOVER_TRACKER_0);RemoveStatus(HANGOVER_TRACKER_1);RemoveStatus(HANGOVER_TRACKER_2);" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Monk_WholenessOfBody" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h129ea319g554fgfe92gbb9ag6b2f2ec66396" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h289a7183g8b6ag8987g5231g7f7c5c51d062" version="2" />

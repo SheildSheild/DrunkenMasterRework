@@ -22,7 +22,7 @@
         <field name="PrepareLoopSound" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Dragonborn_BreathWeapon_Cold" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfccdadccg54bdgef94g238fg0779d4940802" version="6" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DOUSED);" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DOUSED, 100, 2);" />
         <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="CooldownType" version="1" />
         <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />

@@ -35,7 +35,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Performance)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="DrunkenMaster"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_Counter_1;Hangover_Tracker_1;Hangover_Tracker_2;Hangover_Tracker_3;Hangover_Tracker_4;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_Counter_1;Hangover_Tracker_1;Hangover_Tracker_2;Hangover_Tracker_3;Hangover_Tracker_4;Drunk_Removal"/>
                     <attribute id="PassivesRemoved" type="LSString" value="FlurryOfBlowsUnlock"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)"/>
@@ -45,7 +45,7 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="4"/>
                     <attribute id="Name" type="LSString" value="DrunkenMaster"/>
-                    <attribute id="PassivesAdded" type="LSString" value="LifeOfTheParty;Alcoholic_Opening_Strike;Flaming_Fists;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="LifeOfTheParty;Alcoholic_Opening_Strike;"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(a16af3be-de15-49c5-b9c8-99719b1fce2f)"/>
                     <attribute id="TableUUID" type="guid" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21"/>
@@ -54,9 +54,10 @@
                 <node id="Progression">
                     <attribute id="Level" type="uint8" value="6"/>
                     <attribute id="Name" type="LSString" value="DrunkenMaster"/>
-                    <attribute id="PassivesAdded" type="LSString" value="LeapToYourFeet;RedirectAttack_Unlock;Drunk_Counter_2;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="LeapToYourFeet;RedirectAttack_Unlock;Drunk_Counter_2;Flaming_Fists;"/>
                     <attribute id="PassivesRemoved" type="LSString" value="Drunk_Counter_1"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
+                    <attribute id="Selectors" type="LSString" value="AddSpells(987d663e-b72e-422c-a18b-9cfa3655405e)"/>
                     <attribute id="TableUUID" type="guid" value="dbffd3ed-ef5c-4a0d-8b3b-86f017c30e21"/>
                     <attribute id="UUID" type="guid" value="3c9ab40c-7344-482d-94a3-19e1a9412139"/>
                 </node>
