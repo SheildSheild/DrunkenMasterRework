@@ -13,12 +13,21 @@ Editor/Gizmos/
 Editor/Textures/
 Editor/Triggers/
 Editor/Preview/
-Editor/Config/
 Editor/Mods/Shared*
 Editor/Mods/Gustav*
 Editor/Mods/Engine
 Editor/Mods/PhotoMode
 Editor/Mods/Shadow*
+Editor/Config/AllSpark
+Editor/Config/AnimationCopier
+Editor/Config/Common
+Editor/Config/Genome
+Editor/Config/HLOD
+Editor/Config/SceneDefinitions
+Editor/Config/SearchLabels
+Editor/Config/TextureDefinitions
+Editor/Config/UuidObjects
+Editor/Config/VirtualTextureDefinitions
 
 # Other mods and shared folders
 Mods/Shared*
