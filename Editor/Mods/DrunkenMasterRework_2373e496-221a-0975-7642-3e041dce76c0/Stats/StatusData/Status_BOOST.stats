@@ -83,7 +83,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNKEN_MASTER_HUNGOVER" />
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,0-1);RollBonus(Attack,0-1);RollBonus(SkillCheck,0-1)" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_DrunkenHungover" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -97,7 +97,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="RollBonus(SavingThrow,0-2);RollBonus(Attack,0-2);RollBonus(SkillCheck,0-2);ActionResourceBlock(ReactionActionPoint);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e6a68d2e-95bb-4d5a-87f4-19c72030ac6c" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_DrunkenHungover" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -111,7 +111,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="Disadvantage(SavingThrow);RollBonus(Attack,0-3);RollBonus(SkillCheck,0-3);ActionResourceBlock(ReactionActionPoint);" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="c8d04f2e-65c5-4ad2-8368-ccf93bb8be41" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e6a68d2e-95bb-4d5a-87f4-19c72030ac6c" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Poisoned;SG_DrunkenHungover" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -161,7 +161,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK0" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hde1dea7ag95a1g32e9g280cgdea867fa05c9" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel0" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 1);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -173,7 +173,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7e78a8d1g93a8g72dag0fc7gb9e510aadffc" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel1" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 1);CharacterUnarmedDamage(1, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -185,7 +185,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK2" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e83df72g8fd3gadbag9ecbg31bbb900243a" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel2" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -197,7 +197,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK3" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb46527d9gc46ag6b9fg2029gc7be2810611d" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel3" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -213,9 +213,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="2d13ec14-6092-47b9-af0b-6dde12d7fdcf" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK10" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4a28a62g6bb9g84f6g451eg91a88271f4eb" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4a28a62g6bb9g84f6g451eg91a88271f4eb" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel0" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 1);CharacterUnarmedDamage(1, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -225,9 +225,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="ffe360b5-540b-485f-a891-55d61dc30e0e" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK11" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9a7e49fegdfecgf7aegfe83ge77aaed4c2e4" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9a7e49fegdfecgf7aegfe83ge77aaed4c2e4" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel1" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -237,9 +237,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="7688535d-466f-49ca-9082-0da03b502592" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK12" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h029968cdg360ag3bd7g279agbe09dbfdce40" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h029968cdg360ag3bd7g279agbe09dbfdce40" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel2" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -249,9 +249,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="87a00d08-934b-43b1-b0dc-7bb02d959431" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK13" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf5723e1fg2adbg39a3g5b82g9505a53390ba" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb83c2f2dgeb7eg9afcg8c34g9c64db865a06" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel3" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 3);CharacterUnarmedDamage(1d6, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -267,9 +267,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d5ebab54-3b33-4b8c-a5f5-448ac08e3dd2" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK20" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fc0d1bag4f40ga2ddg1325g755b1609c07b" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fc0d1bag4f40ga2ddg1325g755b1609c07b" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel0" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -279,9 +279,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="a418f494-8025-40f5-83d4-bcabe2310305" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK21" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e5ab147gb956gb96dg530ag50611d7f10b8" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3e5ab147gb956gb96dg530ag50611d7f10b8" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel1" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -291,9 +291,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="448de4fa-ca12-49e8-8349-cf935d9fd42b" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK22" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h512999aeg6ee8g47b8g72d1g66596fa29cab" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h512999aeg6ee8g47b8g72d1g66596fa29cab" version="3" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel2" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 3);CharacterUnarmedDamage(1d6, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -303,9 +303,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="4f5ecaef-8882-4c64-8603-0d7b9a2031e6" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK23" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1555d6f0g1d0agc1e0gb235gc297b859c343" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h81ec4437gbb3cg6bebg97b0gdb27eb37f363" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel3" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 3);CharacterUnarmedDamage(2d4, Bludgeoning);ActionResource(BonusActionPoint, 1, 0);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -321,9 +321,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="6abc0ff9-4bd3-49ad-8b0c-914732dcf554" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK30" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe5555e6gdc15g97c0ge218g780f3e5cbf96" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfe5555e6gdc15g97c0ge218g780f3e5cbf96" version="2" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel0" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -333,9 +333,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="8e1d00e2-0fd4-4271-b3fd-0851faf22224" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK31" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66431312ge925g33c7g0f4dg876c548def16" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h66431312ge925g33c7g0f4dg876c548def16" version="2" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel1" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 3);CharacterUnarmedDamage(1d6, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -345,9 +345,9 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="635a7104-d044-470a-94f6-13d562847fb2" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK32" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0805c0a3g2242g9da5ged94g281b9738bf65" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0805c0a3g2242g9da5ged94g281b9738bf65" version="2" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel2" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 3);CharacterUnarmedDamage(2d4, Bludgeoning);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
@@ -357,12 +357,44 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="d72cc097-64bc-48ee-b47f-bb4959afb2a7" />
         <field name="Name" type="NameTableFieldDefinition" value="DRUNK33" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h268cb60ag8122g73cdgc194g46ec2f1f8b96" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="had7f478fg406cg0f7bg0aabg41bc6511dec9" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
-        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_DrunkLevel3" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 4);CharacterUnarmedDamage(2d4+WisdomModifier, Bludgeoning);ActionResource(BonusActionPoint, 1, 0);" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SG_DrunkenHungover); " />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('HANGOVER_TRACKER_1', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER, 100, -1);IF(HasStatus('HANGOVER_TRACKER_2', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_SEVERE, 100, -1);IF(HasStatus('HANGOVER_TRACKER_3', context.Source)):ApplyStatus(SELF, HUNGOVER_DRUNKEN_MASTER_POISONED, 100, -1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fe3268b2-34e6-423a-b654-e54076bbea9d" />
+        <field name="Name" type="NameTableFieldDefinition" value="HANGOVER_TRACKER_0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0ed6390bg8af8g05abgef46g6a964c31ac28" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HANGOVER_TRACKER" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d13dd825-5286-483c-8e2c-ca3239aa5256" />
+        <field name="Name" type="NameTableFieldDefinition" value="HANGOVER_TRACKER_1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h65905cefg974bge60ag4613g22c3579e0757" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HANGOVER_TRACKER" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4a37ba26-38ae-4461-a371-75347d49ec9f" />
+        <field name="Name" type="NameTableFieldDefinition" value="HANGOVER_TRACKER_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h52de3da8g427dg5485g38bag0bdc940bba02" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HANGOVER_TRACKER" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1e05a12f-8f5a-449b-bdd3-3e8204d174f3" />
+        <field name="Name" type="NameTableFieldDefinition" value="HANGOVER_TRACKER_3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h942a184fgc929g2d9bga1e8gf148947c4a4d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="HANGOVER_TRACKER" />
       </fields>
     </stat_object>
   </stat_objects>
