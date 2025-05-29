@@ -10,7 +10,7 @@
         <field name="StillAnimationType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusAnimationType" version="1" />
         <field name="StillAnimationPriority" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StillAnimPriority" version="1" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_DRUNKEN_MASTER" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 2);CharacterUnarmedDamage(1d4, Bludgeoning);" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="EMPTY;" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Passives" type="StringTableFieldDefinition" value="DrunkenFlow;" />
       </fields>
@@ -151,8 +151,38 @@
     </stat_object>
     <stat_object is_substat="false">
       <fields>
-        <field name="UUID" type="IdTableFieldDefinition" value="8d8e7359-1951-4380-803b-512761757322" />
-        <field name="Name" type="NameTableFieldDefinition" value="GOD_I_HOPE_THIS_WORKS" />
+        <field name="UUID" type="IdTableFieldDefinition" value="3d725f43-9a5d-4a30-9206-4758cb05da09" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK0" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hde1dea7ag95a1g32e9g280cgdea867fa05c9" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6e9436c-266b-4939-81f7-a63b19b8137c" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7e78a8d1g93a8g72dag0fc7gb9e510aadffc" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="617d8ebd-c051-4559-a7f5-0ea484d47c22" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5e83df72g8fd3gadbag9ecbg31bbb900243a" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="259bac57-58d6-4989-b962-982bb4d4a1d4" />
+        <field name="Name" type="NameTableFieldDefinition" value="DRUNK3" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb46527d9gc46ag6b9fg2029gc7be2810611d" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="DRUNK_LEVEL" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

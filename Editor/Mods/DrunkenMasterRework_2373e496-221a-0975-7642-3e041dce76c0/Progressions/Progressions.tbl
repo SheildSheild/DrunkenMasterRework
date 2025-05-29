@@ -25,7 +25,7 @@
         <field name="Boosts" type="StringTableFieldDefinition" value="ProficiencyBonus(Skill,Performance)" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="FlurryOfBlowsUnlock" />
         <field name="Selectors" type="StringTableFieldDefinition" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_0;Drunk_1;Drunk_2;Drunk_3;" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

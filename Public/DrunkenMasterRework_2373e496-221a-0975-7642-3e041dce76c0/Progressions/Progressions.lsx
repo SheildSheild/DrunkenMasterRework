@@ -35,7 +35,7 @@
                     <attribute id="Boosts" type="LSString" value="ProficiencyBonus(Skill,Performance)"/>
                     <attribute id="Level" type="uint8" value="3"/>
                     <attribute id="Name" type="LSString" value="DrunkenMaster"/>
-                    <attribute id="PassivesAdded" type="LSString" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;"/>
+                    <attribute id="PassivesAdded" type="LSString" value="CheekyTipple;CheekyTipple_Drunk;DrunkenPerformance;DrunkenFlow;DrunkenMist_ReduceDurationPerDamage_Passive;Drunk_0;Drunk_1;Drunk_2;Drunk_3;"/>
                     <attribute id="PassivesRemoved" type="LSString" value="FlurryOfBlowsUnlock"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="Selectors" type="LSString" value="AddSpells(966a3d57-dcdc-4aa4-a682-812c0e3ec857)"/>
